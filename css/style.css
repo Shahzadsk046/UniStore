@@ -1,0 +1,437 @@
+@font-face{
+    font-family: 'Merriweather';
+    src: url('fonts/Merriweather/Merriweather-Regular.ttf');
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Merriweather'; */
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+.navbar{
+    background-color: rgba(81, 45, 168) !important;
+}
+
+.nav-link{
+    color: #fff !important;
+    font-weight: bold !important;
+}
+
+.dropdown-menu{
+    background: linear-gradient( to right, rgb(241,53,46), rgb(123,34,111));
+    
+}
+
+.dropdown-item{
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.dropdown-item:hover{
+    color: black !important;
+}
+
+.logo{
+    width: 178px;
+}
+
+.mobile{
+    width: 100%;
+    height: 70vh;
+}
+
+.fa-truck, .fa-headphones, .fa-thumbs-up{
+    font-size: 50px !important;
+    margin-right: 10px;
+    color: #512DA8 !important;
+}
+
+h3{
+    color: #512DA8;
+}
+
+.card1, .card2, .card3{
+    display: flex;
+    width: 300px;
+    margin-top: 10px;
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 2px 4px 5px grey;
+    justify-content: center;
+    align-items: center;
+}
+
+.maincard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+
+.newarrivals{
+    margin-top: 50px;
+}
+
+.card{
+    margin: 15px;
+}
+
+.card img{
+    /* width: 50%;
+    height: 25vh; */
+    align-self: center;
+}
+
+.card-title{
+    font-size: 12px;
+}
+
+.btn-primary{
+    width: 100%;
+    background-color: #512DA8;
+    border: 2px solid #512DA8;
+}
+
+.heading{
+    text-align: center;
+    font-weight: bold;
+    color: #512DA8;
+    margin: 20px;
+}
+
+.heading > h1{
+    text-shadow: 2px 2px 5px grey;
+}
+
+.footer{
+    position: absolute;
+    /* bottom: 1px; */
+    width: 100%;
+    background-color: #512DA8;
+    height: 70px;
+    color: white;
+}
+
+.full-bg{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgb(235, 99, 99) , rgb(20, 114, 106));
+}
+
+.about-us{
+    margin: 20px;
+    line-height: 2;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.footer-1{
+    position: fixed;
+    justify-content: center;
+    bottom: 1px;
+    width: 100%;
+    background-color: #512DA8;
+    /* height: 70px; */
+    color: white;
+}
+
+.containers{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#contact-section{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url(../images/contactus.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 3%;
+}
+
+#about-section{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url(../images/aboutus.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 2%;
+}
+
+#contact-section .containers h2{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: rgb(238, 235, 235);
+    letter-spacing: 2px;
+    padding-top: 2%;
+}
+
+.about-us h1{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: rgb(238, 235, 235);
+    letter-spacing: 2px;
+    padding-top: 2%;
+}
+
+#contact-section .containers p{
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3%;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+.contact-form i.fa{
+    font-size: 22px;
+    padding: 3%;
+    background-color: none;
+    margin: 2%;
+    border-radius: 80%;
+    cursor: pointer;
+    border: 2px solid rgb(190, 190, 190);
+    color: rgb(190, 190, 190);
+}
+
+.contact-form{
+    display: grid;
+    grid-template-columns: auto auto;
+    /* grid-gap: 5px; */
+}
+
+.form-info{
+    font-size: 16px;
+    font-style: italic;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.contact-form form input{
+    padding: 10px;
+    margin: 10px;
+    width: 70%;
+    background-color: rgba(136, 133, 133, 0.5);
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+.contact-form form input::placeholder{
+    color: #fff;
+}
+
+.contact-form form textarea{
+    padding: 10px;
+    margin: 10px;
+    width: 70%;
+    background-color: rgba(136, 133, 133, 0.5);
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+.contact-form form .submit{
+    width: 65%;
+    background: none;
+    padding: 4px;
+    outline: none;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 33px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 3%;
+    border: 2px solid rgb(190, 190, 190);
+    color: rgb(190, 190, 190);
+}
+
+.contact-form form .submit:hover{
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact-form form textarea::placeholder{
+    color: #fff;
+}
+
+.contact-form i.fa:hover{
+    cursor: pointer;
+    display: 2px solid #fff;
+    color: #fff;
+}
+
+.scrollToTop{
+    background: rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    height: 40px;
+    width: 40px;
+    padding: 2px;
+    margin:  0 auto;
+    text-align: center;
+    line-height: 0.4;
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+    z-index: 99999;
+    cursor: pointer;
+}
+
+.scrollToTop:hover{
+    background-color: darkgray;
+    color: white;
+}
+
+.scrollToTop .fa{
+    width: 35px;
+}
+
+/* .footer h4{
+    text-align: center;
+    padding-top: 20px;
+} */
+
+/* Add to Cart page CSS */
+
+.param {
+    margin-bottom: 7px;
+    line-height: 1.4;
+}
+.param-inline dt {
+    display: inline-block;
+}
+.param dt {
+    margin: 0;
+    margin-right: 7px;
+    font-weight: 600;
+}
+.param-inline dd {
+    vertical-align: baseline;
+    display: inline-block;
+}
+
+.param dd {
+    margin: 0;
+    vertical-align: baseline;
+} 
+
+.shopping-cart-wrap .price {
+    color: #007bff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 5px;
+    display: block;
+}
+var {
+    font-style: normal;
+}
+
+.media img {
+    margin-right: 1rem;
+}
+.img-sm {
+    width: 90px;
+    max-height: 75px;
+    object-fit: cover;
+}
+
+/* Fotter Style */
+
+.context-dark, .bg-gray-dark, .bg-primary {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-classic a, .footer-classic a:focus, .footer-classic a:active {
+    color: #ffffff;
+}
+.nav-list li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav-list li a:hover:before {
+    margin-left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 23px;
+    font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+}
+.social-container .col {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.nav-list li a:before {
+    content: "\f14f";
+    font: 400 21px/1 "Material Design Icons";
+    color: #4d6de6;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: -28px;
+    margin-right: 7px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .22s ease;
+}
+
+/* media queries */
+
+@media (max-width: 900px){
+    #contact-section .submit{
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px){
+    #contact-section .contact-form{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #contact-section .submit{
+        width: 60%;
+    }
+}
+
+ @media screen and (max-width:600px){                                            
+    .card1, .card2, .card3{                                                
+        width: 100%;                                 
+    }
+
+    .footer{
+        font-size: 12px !important;
+    }
+                                        
+}
